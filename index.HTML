@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./images/checklist (2).ico" type="image/ico">
+
+    <link rel="stylesheet" href="style.CSS">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goudy+Bookletter+1911&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/98d7cb019f.js" crossorigin="anonymous"></script>
+
+    <title>Tarefas - EBAC Interative</title>
+</head>
+<body>
+    <header>
+        <h1>
+            <i class="fa-brands fa-slack"></i>
+            In Work
+        </h1>
+        <p>
+            Registre seus afazeres e realize-os
+            <i class="fa-solid fa-check"></i>
+        </p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="form-container">
+                <form id="form-atividade">
+                    <div>
+                        <label for="nome-atividade">Nome da Atividade</label>
+                        <input type="text" required id="nome-atividade" placeholder="Nome da atividade">
+                    </div>
+                    <div>
+                        <button type="submit" id="confirmar-atividade"><i class="fa-regular fa-square-check"></i>Confirmar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="ul-container">
+            <div id="mensagem-data"></div>
+            <ul id="lista-atividades">
+            </ul>
+            <button type="reset" id="botao-reset"><i class="fa-regular fa-trash-can"></i>Apagar rotina</button>
+        </div>  
+    </main>
+
+    <footer>
+        &copy; 2024 - Todos os direitos Reservados | BielDev 
+    </footer>
+</body>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</html>
